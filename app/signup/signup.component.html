@@ -1,0 +1,24 @@
+
+<form [formGroup]="formGroup" class="signup-form">
+    
+    <label>Name</label>
+    <input  formControlName="name" ><br>
+
+    <label>Email</label>
+    <input type="email" matInput formControlName="email" ><br>
+
+    <label>Password</label>
+    <input type="password"  matInput formControlName="password" ><br>
+
+    <label>Phone Number</label>
+    <input matInput formControlName="phone" ><br>
+
+</form>
+
+<div class="sign-up-container">
+    <button (click)="signup(formGroup)" class="sign-up-button" >Sign Up</button>
+</div>
+
+<div>
+    <h3>Already a user? <a href="login">Login</a> here</h3>
+</div>

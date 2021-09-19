@@ -1,0 +1,11 @@
+
+<h2>Update {{ testName }} Quiz</h2>
+
+<div *ngFor = "let item of qArray; let i = index" >
+    <h4>Q.No {{i+1}} : {{ item.statement }} <button (click)="deleteQuestion(item); reloadPage()" > Delete Question</button></h4>
+    <p> <b>Option 1:</b>  {{ item.opt1 }} </p>
+    <p> <b>Option 2:</b>  {{ item.opt2 }} </p>
+    <p> <b>Option 3:</b>  {{ item.opt3 }} </p>
+    <p> <b>Option 4:</b>  {{ item.opt4 }} </p>
+    <p> <b>Answer:</b>  {{ item.ans }} </p>
+</div>

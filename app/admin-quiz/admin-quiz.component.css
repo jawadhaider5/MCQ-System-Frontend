@@ -1,0 +1,11 @@
+
+.new-quiz{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}

@@ -1,0 +1,17 @@
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+
+.sign-up-button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 4px 4px;
+    border-radius: 5px;
+    font-size: large;
+}

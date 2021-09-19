@@ -1,0 +1,50 @@
+<form [formGroup]="formGroup" class="add-quiz">
+    
+    <label>Test Name</label>
+    <input matInput formControlName="testName" ><br>
+
+    <label>Test Id</label>
+    <input matInput formControlName="testId" ><br>
+
+</form>
+
+<div>
+    <div>
+            <h1> Questions </h1>
+    </div>
+   
+</div>
+
+<div *ngFor="let item of questions.controls; let i = index">
+<h2> Question {{i+1}} </h2>
+    <form [formGroup]="item" style="display: flex;flex-direction: column;width: 17%;">
+       
+            <label>Number</label>
+            <input matInput formControlName="number" ><br>
+        
+            <label>Statement</label>
+            <input matInput formControlName="statement" ><br>
+      
+            <label>Option1</label>
+            <input matInput formControlName="opt1" ><br>
+     
+            <label>Option2</label>
+            <input matInput formControlName="opt2" ><br>
+
+            <label>Option3</label>
+            <input matInput formControlName="opt3" ><br>
+
+            <label>Option4</label>
+            <input matInput formControlName="opt4" ><br>
+
+            <label>Answer</label>
+            <input matInput formControlName="ans" ><br>
+     
+    </form>
+
+</div>
+
+<div class="add-quiz-container">
+    <button (click)="addQuestion()" >Add Question </button><br><br>
+    <button (click)="addQuiz(formGroup)" class="add-quiz-button" >Add Quiz To Database</button>
+</div>

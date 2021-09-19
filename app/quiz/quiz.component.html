@@ -1,0 +1,18 @@
+
+<h2>Attempt all questions</h2>
+
+<div *ngFor = "let item of qArray; let i = index">
+    <h3> Q.No {{i+1}} : {{ item.statement }}</h3>
+  
+    <mat-radio-group [(ngModel)]="selected" aria-label="Select an option">
+        <mat-radio-button name="op" value="item.opt1" (change)="radioChange($event)">{{ item.opt1 }}</mat-radio-button><br><br>
+        <mat-radio-button name="op" value="item.opt2" (change)="radioChange($event)">{{ item.opt2 }}</mat-radio-button><br><br>
+        <mat-radio-button name="op" value="item.opt3" (change)="radioChange($event)">{{ item.opt3 }}</mat-radio-button><br><br>
+        <mat-radio-button name="op" value="item.opt4" (change)="radioChange($event)">{{ item.opt4 }}</mat-radio-button><br><br>
+    </mat-radio-group> <br>  
+    
+</div>
+
+<div class="button">
+    <button mat-raised-button (click)="getScore()" class="button">Submit</button>
+</div>

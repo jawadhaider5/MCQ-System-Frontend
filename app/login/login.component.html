@@ -1,0 +1,14 @@
+
+<form [formGroup]="formGroup" class="signin-form">
+
+    <label>Email</label>
+    <input type="email" matInput formControlName="email" ><br>
+
+    <label>Password</label>
+    <input type="password"  matInput formControlName="password" ><br>
+
+</form>
+
+<div class="sign-in-container">
+    <button (click)="signin(formGroup)" class="sign-in-button" >Sign In</button>
+</div>

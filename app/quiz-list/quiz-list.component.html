@@ -1,0 +1,10 @@
+
+<div>
+    <h1>Attempt Quiz</h1>
+</div>
+
+<div>
+    <div *ngFor="let item of qlist" style="cursor: pointer;">
+        <h2 (click)="moveToQuiz(item)" > {{ item.testName }} </h2>
+    </div>
+</div>
